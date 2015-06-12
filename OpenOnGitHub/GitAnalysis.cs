@@ -18,7 +18,7 @@ namespace OpenOnGitHub
         readonly Repository repository;
         readonly string targetFullPath;
 
-        public bool IsDiscoveredGitRepository => repository != null;
+        public bool IsDiscoveredGitRepository {get { return repository != null; }}
 
         public GitAnalysis(string targetFullPath)
         {
